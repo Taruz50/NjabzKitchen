@@ -173,6 +173,7 @@ address { font-style: normal; }
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -182,7 +183,7 @@ body {
   font-size: var(--fontSize-body-4);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
-  overflow: hidden;
+  overflow-x: hidden;
   height: 300vh;
 }
 
@@ -1450,6 +1451,8 @@ textarea.input-field {
    * CUSTOM PROPERTY
    */
 
+
+
   :root {
 
     /**
@@ -1646,7 +1649,17 @@ textarea.input-field {
 
   /**
    * REUSED STYLE
+
    */
+
+   html,body{
+     width:100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+
+   }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
